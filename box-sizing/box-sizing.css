@@ -1,0 +1,25 @@
+body {
+}
+
+h2,
+p {
+  background-color: #dde0e3;
+  /* margin: 100px; */
+}
+
+em,
+a {
+  background-color: #b2d6ff;
+}
+
+.invisible {
+  padding-top: 1px;
+}
+
+.button {
+  background-color: blue;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}

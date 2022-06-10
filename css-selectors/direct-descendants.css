@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Pacifico";
+  src: local("Pacifico"), url("./fonts/Pacifico-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #5995da;
+  padding: 20px 40px;
+  font-family: "Pacifico";
+}
+
+nav > p {
+  margin-right: auto;
+  font-size: 1.5rem;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+/* Here note that above if we do nav>li instead, it will 
+not work because there are no direct descendants of nav that are li */
+
+nav li:last-of-type {
+  margin-right: 0;
+}
+
+main {
+  padding: 40px;
+}
+
+section > h1 {
+  text-align: center;
+}
+
+section div {
+  display: flex;
+  background-color: #d2e9fa;
+  border: 1px solid black;
+}
+
+section > div {
+  justify-content: space-around;
+  background-color: white;
+  border: none;
+}
+
+/* selects the top most leaf nodes */
+
+.item {
+  border: 2px dashed lightblue;
+  padding: 50px;
+}

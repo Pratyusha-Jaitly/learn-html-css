@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Direct Descendants</title>
+    <link rel="stylesheet" href="overflow.css" />
+  </head>
+  <body>
+    <header>
+      <div class="branding">Branding</div>
+      <ul>
+        <li>Option1</li>
+        <li>Option2</li>
+        <li>Option3</li>
+      </ul>
+    </header>
+    <main>
+      <div class="first-box"></div>
+      <div class="flex-container overflow-auto">
+        <p>Overflow : auto</p>
+        <p>The box below <span>is</span> scrollable</p>
+        <div class="flex-item"></div>
+      </div>
+
+      <div class="flex-container overflow-hidden">
+        <p>Overflow: hidden</p>
+        <p>The box below is <span>not</span> scrollable</p>
+        <div class="flex-item"></div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./fonts/Roboto-BlackItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./fonts/Roboto-ThinItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+body {
+  font-family: "Roboto";
+}
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #72d0e2;
+}
+
+.branding {
+  margin-right: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+header li {
+  display: inline;
+  margin-right: 5px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+header li:last-of-type {
+  margin-right: 0;
+}
+
+p {
+  font-weight: bold;
+  font-style: italic;
+}
+
+main > div {
+  height: 200px;
+  background-color: red;
+  margin: 40px 0;
+}
+span {
+  font-weight: bold;
+}
+
+main > div p:last-of-type {
+  font-weight: normal;
+}
+
+.flex-container {
+  border: 5px solid grey;
+}
+
+.flex-item {
+  margin-top: 50px;
+  height: 700px;
+  background-color: blue;
+  top: 50px;
+  outline: 5px solid white;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

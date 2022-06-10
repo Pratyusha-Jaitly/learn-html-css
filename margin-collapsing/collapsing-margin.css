@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Pacifica";
+  src: local("Pacifica"),
+    url("../fonts/Pacifico-Regular.ttf") format("truetype");
+}
+
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Pacifica";
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #008787;
+}
+
+h1 {
+  margin-right: auto;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+li:last-of-type {
+  margin-right: none;
+}
+
+main {
+  padding: 40px;
+}
+
+section > p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.adjacent-sibling div {
+  padding: 20px;
+  background-color: #b5e6ff;
+  margin: 50px;
+}
+
+.parent-descendants > div {
+  margin: 20px;
+  /* padding: 20px;
+  border: 5px solid #abbdff; */
+}
+
+.parent-descendants > div > div {
+  margin: 20px;
+  border: 5px solid #cba1ff;
+}

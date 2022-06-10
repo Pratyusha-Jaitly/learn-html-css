@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Collapsing margin</title>
+    <link rel="stylesheet" href="collapsing-margin.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Collapsing Margin</h1>
+
+      <nav>
+        <ul>
+          <li>1st</li>
+          <li>2nd</li>
+          <li>3rd</li>
+          <li>4th</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="adjacent-sibling">
+        <h2>Adjacent siblings</h2>
+        <p>Hint.....inspect it</p>
+        <div>sibling 1</div>
+        <div>sibling 2</div>
+      </section>
+
+      <hr />
+
+      <section class="parent-descendants">
+        <h2>Parent - descendants</h2>
+        <div>
+          <div>
+            This is the child in pale pink border. And we have given the parent
+            no border or anything. There is nothing to differentiate between its
+            margin-top and margin-top of its child.<br />
+            Try adding an inline element/border/padding to the parent
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
