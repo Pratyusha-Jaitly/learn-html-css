@@ -1,0 +1,53 @@
+@font-face{ 
+    font-family: "ShadowsIntoLight";
+    src: local("ShadowsIntoLight"), url("../fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
+}
+
+*, *::before, *::after{
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header{
+    padding:20px 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1f3023;
+    color:white;
+}
+
+header p{
+    font-size:1.25rem;
+}
+
+header ul{
+    list-style:none;
+    display:flex;
+}
+
+ul li{
+    margin-right:10px;
+    font-family: "ShadowsIntoLight";
+    font-style:italic;
+}
+
+ul li:last-of-type{
+    margin-right:0;
+}
+
+main{
+    display:grid;
+    place-content:center;
+}
+
+main>h1{
+    color:#1f3023;
+    text-align: center;
+}
